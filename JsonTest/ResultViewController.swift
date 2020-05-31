@@ -12,15 +12,22 @@ class ResultViewVontroller: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        resultJsonId.text = jsonId
+        resultJsonName.text = jsonName
     }
     
-    var json = ""
+    var jsonId = ""
     
-    @IBOutlet weak var resultJson: UILabel!
+    var jsonName = ""
+    
+   
+    @IBOutlet weak var resultJsonId: UILabel!
+    
+    @IBOutlet weak var resultJsonName: UILabel!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        resultJson.text = json
+        
     }
     
 }
